@@ -4,6 +4,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --primery-color: #0066ff;
   /* style css */
@@ -63,8 +66,9 @@ nav ul a:hover {
   color: #fff;
 }
 .hero-btn:hover {
-  background: #0099ff;
-  transition: all 2ms;
+  background: #152d64;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 /* hero style */
@@ -81,15 +85,39 @@ nav ul a:hover {
   align-items: center;
   width: 50vw;
 }
-.hero-icons {
-  margin-bottom: 1.2rem;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50px;
+  margin-bottom: 1.5rem;
 }
 .fa-brands {
-  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 5px 0;
   font-size: 25px;
+  border-radius: 8px;
+}
+
+.fa-brands:hover {
+  color: #fff;
+  transition: ease-in-out 3ms;
 }
 .fa-facebook-f:hover {
-  color: #0251f9;
+  background-color: #1877f2;
+}
+
+.fa-instagram:hover {
+  background-color: #e4405f;
+}
+
+.fa-x-twitter:hover {
+  background-color: #000;
 }
 .hero-text-con {
   display: flex;
@@ -114,6 +142,7 @@ nav ul a:hover {
 .hero-sec-btns {
   margin: 0 10px;
 }
+
 .cv {
   background: #fff;
   color: #000;
@@ -122,10 +151,13 @@ nav ul a:hover {
 .cv:hover {
   background: #7ee87e;
   border: 1px solid #7ee87e;
+  transition: all 0.3s ease-in-out;
 }
 .hero-img {
   display: flex;
   width: 50vw;
+  display: flex;
+  justify-content: center;
 }
 /* about me */
 
@@ -198,7 +230,7 @@ nav ul a:hover {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .services-con {
   display: flex;
